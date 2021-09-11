@@ -4,8 +4,11 @@ const cors=require('cors');
 require("dotenv").config();
 const app=express();
 const LoginSign=require('./routes/login.js')
+const dinoInfoRoute =require('./routes/dinoinfo');
+
 app.use(express.json());
 app.use(LoginSign);
+app.use(dinoInfoRoute);
 app.use(cors());
 app.get('/',(req,res)=>{
     res.send("2332 ");
