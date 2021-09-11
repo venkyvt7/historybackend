@@ -6,10 +6,13 @@ const app=express();
 const LoginSign=require('./routes/login.js')
 const dinoInfoRoute =require('./routes/dinoinfo');
 const Age=require('./routes/age')
+const sendMssg=require('./routes/msgTwillio.js');
 app.use(express.json());
 app.use(LoginSign);
 app.use(dinoInfoRoute);
 app.use(Age);
+
+app.use(sendMssg);
 app.use(cors());
 app.get('/',(req,res)=>{
     res.send("2332 ");

@@ -1,13 +1,11 @@
 const express=require('express');
+const { SendWhatsapp } = require('../controller/twillio/twillio');
 
 
 const router=express.Router();
 
 
-router.post('/sendFact',(req,res)=>{
+router.post('/sendfact',SendWhatsapp);
 
-  const {mobile}=req.body;
 
-  
-
-})
+module.exports=router;

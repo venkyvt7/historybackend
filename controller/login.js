@@ -32,7 +32,7 @@ async function login(req,res){
  if(check==1)
  {
     const token=await loginToken(email);
-  res.send({Token:token});
+  res.send({Token:token,email:find.email,name:find.name});
  }
  else{
   res.send({message:"Wrong Email or password"});
@@ -80,7 +80,7 @@ else{
 
    await user.save();
    const token=await loginToken(email);
- res.send({Token:token});
+ res.send({Token:token,email:find.email,name:find.name});
   }
 
   else{

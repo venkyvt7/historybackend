@@ -128,3 +128,15 @@ post /addage
   "cardDetailedText1": "Paleolithic small sculptures are made of clay, bone, ivory, or stone and consist of simple figurines depicting animals and humans. In particular, Venus figurines are the most indicative of this era. They are highly stylized depictions of women with exaggerated female parts representing fertility and sexuality. They typically date to the Gravettian period (26,000–21,000 years ago), but the earliest known Venus figurine (Venus of Hohle Fels) dates to at least 35,000 years ago, and the most recent (Venus of Monruz) dates to roughly 11,000 years ago. They are most common in the Mediterranean region, but there are examples from as far as Siberia. Archaeologists can only speculate on their meaning, but their ubiquitous nature indicates a universal human attraction to art and possibly religion..\n\n",
   "media1": "https://textimgs.s3.amazonaws.com/boundless-art-history/ngzi8gkasjg1xxmtxyij.jpe#fixme"
 }
+
+
+
+
+post /sendfact
+
+body 
+{
+  number:"+91....",
+  data:" data"
+
+}
