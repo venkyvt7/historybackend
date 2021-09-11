@@ -1,0 +1,130 @@
+
+
+LOGIN 
+
+POST http://localhost:8000/login
+body  => {
+  email:@email,
+  password:@password
+}
+
+
+res=>{
+{
+    "Token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjoiMUBnbWFpbC5jb20iLCJpYXQiOjE2MzEzNjc2NDAsImV4cCI6MTYzMTM4MjA0MH0.aphDr7mUY82okygY95Gi0QVjQJfShaUmNeTfDz4vCnA"
+}
+
+}
+
+
+
+
+SIGNUP 
+
+POST http://localhost:8000/register
+body  => {
+  name:@name,
+  email:@email,
+  password:@password
+}
+
+
+
+res=>{
+{
+    "Token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjoiMUBnbWFpbC5jb20iLCJpYXQiOjE2MzEzNjc2NDAsImV4cCI6MTYzMTM4MjA0MH0.aphDr7mUY82okygY95Gi0QVjQJfShaUmNeTfDz4vCnA"
+}
+
+}
+
+
+
+Dino Info
+
+GET http://localhost:8000/dinoinfo
+
+
+
+ "data": [
+        {
+            "name": "1. Abelisaurus",
+            "text": "Abelisaurus is a theropod dinosaur, which existed during the late Cretaceous Era. It was predatory by nature. Unlike some other types of dinosaurs, Abelisaurus walked on two legs or was bipedal. The species was thought to be 7 to 9 meters in length and hence was considered a medium-sized dinosaur.How did the modern Era learn about Abelisaurus? Through a single skull that was found! And that too was incomplete. Through this skull, scientists were able to identify Abelisaurus’s diet, lifestyle and size.",
+            "img": "https://sortingwithstyle.com/wp-content/uploads/2018/06/Dinosaur-Names-Ankylosaurus.jpg?ezimgfmt=rs%3Adevice%2Frscb19-1"
+        },......]
+
+
+
+
+
+
+History Quiz
+GET https://opentdb.com/api.php?amount=5&category=23&difficulty=easy&type=multiple
+
+
+
+TIMELINE POST
+
+post /getallage
+
+body 
+{
+  age:(Eg. Stone Age)
+  
+}
+
+will send all the data related to that age
+
+eg: 
+{
+    "data": [
+        {
+            "_id": "613cd350a43e48a6105f0afd",
+            "cardSubtitle1": "The Paleolithic era is characterized by the emergence of basic stone tools and stone art in the archaeological record. For the first time, humans began to create durable products of self expression that served no function for survival. The diagnostic art of this period appears in two main forms: small sculptures and large paintings and engravings on cave walls. There are also various examples of carved bone and ivory flutes in the Paleolithic era, indicating another art form utilized by prehistoric humans.",
+            "cardDetailedText1": "Paleolithic small sculptures are made of clay, bone, ivory, or stone and consist of simple figurines depicting animals and humans. In particular, Venus figurines are the most indicative of this era. They are highly stylized depictions of women with exaggerated female parts representing fertility and sexuality. They typically date to the Gravettian period (26,000–21,000 years ago), but the earliest known Venus figurine (Venus of Hohle Fels) dates to at least 35,000 years ago, and the most recent (Venus of Monruz) dates to roughly 11,000 years ago. They are most common in the Mediterranean region, but there are examples from as far as Siberia. Archaeologists can only speculate on their meaning, but their ubiquitous nature indicates a universal human attraction to art and possibly religion..\n\n",
+            "media1": "https://textimgs.s3.amazonaws.com/boundless-art-history/ngzi8gkasjg1xxmtxyij.jpe#fixme",
+            "comments": [],
+            "__v": 0
+        },
+        {
+            "_id": "613cd3e160397032ec3cced1",
+            "cardSubtitle1": "The Paleolithic era is characterized by the emergence of basic stone tools and stone art in the archaeological record. For the first time, humans began to create durable products of self expression that served no function for survival. The diagnostic art of this period appears in two main forms: small sculptures and large paintings and engravings on cave walls. There are also various examples of carved bone and ivory flutes in the Paleolithic era, indicating another art form utilized by prehistoric humans.",
+            "cardDetailedText1": "Paleolithic small sculptures are made of clay, bone, ivory, or stone and consist of simple figurines depicting animals and humans. In particular, Venus figurines are the most indicative of this era. They are highly stylized depictions of women with exaggerated female parts representing fertility and sexuality. They typically date to the Gravettian period (26,000–21,000 years ago), but the earliest known Venus figurine (Venus of Hohle Fels) dates to at least 35,000 years ago, and the most recent (Venus of Monruz) dates to roughly 11,000 years ago. They are most common in the Mediterranean region, but there are examples from as far as Siberia. Archaeologists can only speculate on their meaning, but their ubiquitous nature indicates a universal human attraction to art and possibly religion..\n\n",
+            "media1": "https://textimgs.s3.amazonaws.com/boundless-art-history/ngzi8gkasjg1xxmtxyij.jpe#fixme",
+            "comments": [],
+            "__v": 0
+        },
+        {
+            "_id": "613cd467515eeca0ab7578a9",
+            "cardSubtitle1": "The Paleolithic era is characterized by the emergence of basic stone tools and stone art in the archaeological record. For the first time, humans began to create durable products of self expression that served no function for survival. The diagnostic art of this period appears in two main forms: small sculptures and large paintings and engravings on cave walls. There are also various examples of carved bone and ivory flutes in the Paleolithic era, indicating another art form utilized by prehistoric humans.",
+            "cardDetailedText1": "Paleolithic small sculptures are made of clay, bone, ivory, or stone and consist of simple figurines depicting animals and humans. In particular, Venus figurines are the most indicative of this era. They are highly stylized depictions of women with exaggerated female parts representing fertility and sexuality. They typically date to the Gravettian period (26,000–21,000 years ago), but the earliest known Venus figurine (Venus of Hohle Fels) dates to at least 35,000 years ago, and the most recent (Venus of Monruz) dates to roughly 11,000 years ago. They are most common in the Mediterranean region, but there are examples from as far as Siberia. Archaeologists can only speculate on their meaning, but their ubiquitous nature indicates a universal human attraction to art and possibly religion..\n\n",
+            "media1": "https://textimgs.s3.amazonaws.com/boundless-art-history/ngzi8gkasjg1xxmtxyij.jpe#fixme",
+            "comments": [],
+            "__v": 0
+        }
+    ]
+}
+
+
+
+POST /addcomment 
+
+{
+_id:_id,
+name:name,
+comment:comment,
+}
+
+
+
+
+
+post /addage 
+
+{
+  "name": "Stone Age",
+  "title": "30,000 BCE–10,000 BCE",
+  "cardTitle1": "Paleolithic Period",
+  "cardSubtitle1": "The Paleolithic era is characterized by the emergence of basic stone tools and stone art in the archaeological record. For the first time, humans began to create durable products of self expression that served no function for survival. The diagnostic art of this period appears in two main forms: small sculptures and large paintings and engravings on cave walls. There are also various examples of carved bone and ivory flutes in the Paleolithic era, indicating another art form utilized by prehistoric humans.",
+  "cardDetailedText1": "Paleolithic small sculptures are made of clay, bone, ivory, or stone and consist of simple figurines depicting animals and humans. In particular, Venus figurines are the most indicative of this era. They are highly stylized depictions of women with exaggerated female parts representing fertility and sexuality. They typically date to the Gravettian period (26,000–21,000 years ago), but the earliest known Venus figurine (Venus of Hohle Fels) dates to at least 35,000 years ago, and the most recent (Venus of Monruz) dates to roughly 11,000 years ago. They are most common in the Mediterranean region, but there are examples from as far as Siberia. Archaeologists can only speculate on their meaning, but their ubiquitous nature indicates a universal human attraction to art and possibly religion..\n\n",
+  "media1": "https://textimgs.s3.amazonaws.com/boundless-art-history/ngzi8gkasjg1xxmtxyij.jpe#fixme"
+}
