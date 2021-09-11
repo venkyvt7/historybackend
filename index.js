@@ -18,7 +18,7 @@ app.get('/',(req,res)=>{
     res.send("2332 ");
 })
 
-const PORT=8000||process.env.PORT
+const PORT=process.env.PORT||8000
 
 mongoose
   .connect(process.env.DB_URI, {
