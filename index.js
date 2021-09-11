@@ -5,10 +5,11 @@ require("dotenv").config();
 const app=express();
 const LoginSign=require('./routes/login.js')
 const dinoInfoRoute =require('./routes/dinoinfo');
-
+const Age=require('./routes/age')
 app.use(express.json());
 app.use(LoginSign);
 app.use(dinoInfoRoute);
+app.use(Age);
 app.use(cors());
 app.get('/',(req,res)=>{
     res.send("2332 ");
