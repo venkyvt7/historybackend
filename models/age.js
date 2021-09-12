@@ -2,8 +2,7 @@ const monoose=require('mongoose');
 
 
 const age=monoose.Schema({
-id:String,
-age:String,
+name:String,
  title:String,
 cardSubtitle1:String,
 cardDetailedText1:String,

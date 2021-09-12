@@ -11,8 +11,9 @@ const {age}=req.body;
 async function addAge(req,res){
   try{
 const newAge={
-  Tilte:req.body.Tilte,
-  age:req.body.age,
+ 
+  name:req.body.name,
+  title:req.body.title,
   cardTitle1:req.body.cardTitle1,
   cardSubtitle1:
   req.body.cardSubtitle1,
@@ -22,8 +23,9 @@ const newAge={
 
 }
 const age1= await Age.create({
-  Tilte:req.body.Tilte,
-  age:req.body.age,
+  
+  name:req.body.name,
+  title:req.body.title,
   cardTitle1:req.body.cardTitle1,
   cardSubtitle1:
   req.body.cardSubtitle1,
@@ -35,7 +37,7 @@ const age1= await Age.create({
  
 await age1.save();
 
-res.send(newAge);
+res.send(age1);
   }
 
   catch(e){
