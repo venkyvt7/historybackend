@@ -46,11 +46,12 @@ async function addComment(req,res){
   
     try
     {
+      
     const {_id,name,comment}=req.body;
-
+// console.log(_id,name,comment);
     const data = await Age.findOne({_id:_id});
-
-    data.comment.push({
+     
+    data.comments.push({
         name:name,
         comment:comment
     })
@@ -61,6 +62,8 @@ async function addComment(req,res){
     }
 
     catch(e){
+      console.log(e);
+
         res.send({message:" ERROR "});
     }
 }
