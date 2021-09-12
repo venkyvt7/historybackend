@@ -52,7 +52,7 @@ async function addComment(req,res){
 
     data.comment.push({
         name:name,
-        comment,comment
+        comment:comment
     })
  
     await data.save();
