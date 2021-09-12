@@ -3,7 +3,7 @@ const Age=require('../../models/age.js');
 async function getAge(req,res){
 
 const {age}=req.body;
-    const data= await Age.find({age:age});
+    const data= await Age.find({tilte:age});
 
      res.send({data});
 }
